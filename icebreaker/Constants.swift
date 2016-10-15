@@ -17,7 +17,7 @@ struct Constants {
     
     struct URIs {
         // production url
-        static let baseUri = "https://icebreaker-dev.herokuapp.com"
+        static let baseUri = "https://icebreaker-prod.herokuapp.com"
         
         // dev url
 //        static let baseUri = "http://localhost:3000"

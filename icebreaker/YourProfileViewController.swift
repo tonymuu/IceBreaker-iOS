@@ -80,7 +80,7 @@ class YourProfileViewController: UIViewController {
                         let imgViewContainer = UIView(frame: self.profileImage.frame)
                         self.profileImage.layer.cornerRadius = imgViewContainer.frame.width / 2
                         self.profileImage.layer.borderWidth = 10.0
-                        self.profileImage.layer.borderColor = Constants.backgroundColor.light.cgColor
+                        self.profileImage.layer.borderColor = Constants.backgroundColor.dark.cgColor
                         self.profileImage.clipsToBounds = true
                         self.profileImage.contentMode = .scaleAspectFill
                     }

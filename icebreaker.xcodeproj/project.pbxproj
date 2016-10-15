@@ -24,6 +24,7 @@
 		EA99CE151DB25EED00612ADE /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE0F1DB25EED00612ADE /* PrimerViewController.swift */; };
 		EA99CE161DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE101DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift */; };
 		EA99CE181DB28F8900612ADE /* Profile Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE171DB28F8900612ADE /* Profile Icon.png */; };
+		EA99CE1D1DB2A62400612ADE /* Icebreaker-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE1C1DB2A62400612ADE /* Icebreaker-Logo.png */; };
 		EAA5C8991DB1CC3900B9A0B0 /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5C8981DB1CC3900B9A0B0 /* YourProfileViewController.swift */; };
 		EAA5C89C1DB1CCD200B9A0B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5C89B1DB1CCD200B9A0B0 /* Constants.swift */; };
 		EAAEFB801DB1DDBF00252510 /* The best way to start a conversation with a stranger.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAEFB7E1DB1DDBF00252510 /* The best way to start a conversation with a stranger.png */; };
@@ -56,6 +57,7 @@
 		EA99CE171DB28F8900612ADE /* Profile Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile Icon.png"; sourceTree = "<group>"; };
 		EA99CE1A1DB292D400612ADE /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		EA99CE1B1DB292E100612ADE /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		EA99CE1C1DB2A62400612ADE /* Icebreaker-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icebreaker-Logo.png"; sourceTree = "<group>"; };
 		EAA5C8981DB1CC3900B9A0B0 /* YourProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
 		EAA5C89B1DB1CCD200B9A0B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EAA5C89D1DB1D27C00B9A0B0 /* icebreaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = icebreaker.entitlements; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				EAAEFB7E1DB1DDBF00252510 /* The best way to start a conversation with a stranger.png */,
 				EAAEFB7F1DB1DDBF00252510 /* Vector Smart Object.png */,
 				EA99CE171DB28F8900612ADE /* Profile Icon.png */,
+				EA99CE1C1DB2A62400612ADE /* Icebreaker-Logo.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				EA99CE111DB25EED00612ADE /* Assets.xcassets in Resources */,
 				EA99CE131DB25EED00612ADE /* Main.storyboard in Resources */,
 				EA5574271DB1BABF004094CE /* Main.storyboard in Resources */,
+				EA99CE1D1DB2A62400612ADE /* Icebreaker-Logo.png in Resources */,
 				EAAEFB801DB1DDBF00252510 /* The best way to start a conversation with a stranger.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
