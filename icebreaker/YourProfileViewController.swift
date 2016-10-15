@@ -16,22 +16,45 @@ class YourProfileViewController: UIViewController {
     @IBOutlet weak var line3: UITextField!
     @IBOutlet weak var profileImage: UIImageView!
     
+    @IBAction func saveButtonClick(_ sender: AnyObject) {
+        let bioLines = [line1.text!, line2.text!, line3.text!] as [String]
+        let bioString = bioLines.joined(separator: Constants.bioDelimiter) as! String
+        let dict = ["info": bioString]
+        Alamofire.request(Constants.URIs.baseUri + Constants.routes.updateInfo, method: .post, parameters: dict, encoding: URLEncoding.default).responseJSON { response in switch response.result {
+            case .success(let data):
+                print("success updated info")
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let token: String = FBSDKAccessToken.current().tokenString
         let params = ["access_token": token]
-
-        Alamofire.request(Constants.URIs.baseUri + Constants.routes.getUser, method: .get, parameters: params, encoding: URLEncoding.default).responseJSON { response in switch response.result {
-        case .success(let data):
-            let dict = data as! NSDictionary
-            let profilePicString = dict.object(forKey: "picture") as! String
-            let profilePicUrl = URL(string: profilePicString)
-            if let imgData = try? UIImage(data: Data(contentsOf: profilePicUrl!)) {
-                self.profileImage.image = imgData
-            }
-        case .failure(let error):
-            print(error)
-            }
+        Alamofire.request(Constants.URIs.baseUri + Constants.routes.auth, method: .get, parameters: params, encoding: URLEncoding.default).responseJSON { response in
+                Alamofire.request(Constants.URIs.baseUri + Constants.routes.getUser, method: .get, parameters: nil, encoding: URLEncoding.default).responseJSON { response in switch response.result {
+                case .success(let data):
+                    let raw = data as! NSDictionary
+                    let dict = raw.object(forKey: "facebook") as! NSDictionary
+                    let profilePicString = dict.object(forKey: "picture") as! String
+                    let profilePicUrl = URL(string: profilePicString)
+                    if let imgData = try? UIImage(data: Data(contentsOf: profilePicUrl!)) {
+                        self.profileImage.image = imgData
+                    }
+                    
+                    if let bioString = dict.object(forKey: "bio") as! String? {
+                        let bioLines = bioString.components(separatedBy: Constants.bioDelimiter)
+                        self.line1.text = bioLines[0]
+                        self.line2.text = bioLines[1]
+                        self.line3.text = bioLines[2]
+                    }
+                    
+                case .failure(let error):
+                    print(error)
+                    }
+                }
         }
     }
     

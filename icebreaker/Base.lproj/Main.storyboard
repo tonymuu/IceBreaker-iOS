@@ -82,6 +82,9 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPk-Ap-fJ0">
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="saveButtonClick:" destination="HEa-6m-eqX" eventType="touchUpInside" id="LG3-0q-zLQ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex. I like to go mountain-biking." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3w-Km-VsT">
                                 <nil key="textColor"/>

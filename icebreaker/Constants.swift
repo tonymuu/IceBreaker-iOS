@@ -4,6 +4,7 @@ import UIKit.UIColor
 struct Constants {
     static let images = [UIImage(named: "home-1.jpg"), UIImage(named: "home-2.jpg"), UIImage(named: "home-3.jpg")]
     
+    static let bioDelimiter = "%@"
     
     struct backgroundColor {
         static let light = UIColor(red: 0.082, green: 0.729, blue: 0.600, alpha: 1.00)
@@ -28,6 +29,7 @@ struct Constants {
         static let auth = "/auth/facebook/token"
         static let addUser = "/add_user"
         static let getUser = "/get_user"
+        static let updateInfo = "/update_info"
     }
 }
 
