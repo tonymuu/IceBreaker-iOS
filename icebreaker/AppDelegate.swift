@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        if isUserAuthenticated() {
+            
+            let myStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = myStoryBoard.instantiateViewController(withIdentifier: "YourProfileVC") as! YourProfileViewController
+            self.window?.rootViewController = vc
+            
+            return true
+            
+        } else {
+            let myStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = myStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! ViewController
+            self.window?.rootViewController = vc
+            return true
+        }
+
         return true
     }
     
@@ -46,7 +62,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func isUserAuthenticated() -> Bool {
+        return !(FBSDKAccessToken.current() == nil)
+    }
 
+    func logout() {
+        FBSDKLoginManager().logOut()
+    }
 
 }
 

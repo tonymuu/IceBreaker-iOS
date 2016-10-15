@@ -23,6 +23,7 @@
 		EA99CE141DB25EED00612ADE /* PrimerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE0E1DB25EED00612ADE /* PrimerCollectionViewCell.swift */; };
 		EA99CE151DB25EED00612ADE /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE0F1DB25EED00612ADE /* PrimerViewController.swift */; };
 		EA99CE161DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE101DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift */; };
+		EA99CE181DB28F8900612ADE /* Profile Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE171DB28F8900612ADE /* Profile Icon.png */; };
 		EAA5C8991DB1CC3900B9A0B0 /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5C8981DB1CC3900B9A0B0 /* YourProfileViewController.swift */; };
 		EAA5C89C1DB1CCD200B9A0B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5C89B1DB1CCD200B9A0B0 /* Constants.swift */; };
 		EAAEFB801DB1DDBF00252510 /* The best way to start a conversation with a stranger.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAEFB7E1DB1DDBF00252510 /* The best way to start a conversation with a stranger.png */; };
@@ -52,6 +53,9 @@
 		EA99CE0E1DB25EED00612ADE /* PrimerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimerCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA99CE0F1DB25EED00612ADE /* PrimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimerViewController.swift; sourceTree = "<group>"; };
 		EA99CE101DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		EA99CE171DB28F8900612ADE /* Profile Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile Icon.png"; sourceTree = "<group>"; };
+		EA99CE1A1DB292D400612ADE /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		EA99CE1B1DB292E100612ADE /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		EAA5C8981DB1CC3900B9A0B0 /* YourProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
 		EAA5C89B1DB1CCD200B9A0B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EAA5C89D1DB1D27C00B9A0B0 /* icebreaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = icebreaker.entitlements; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 		EA5574201DB1BABF004094CE /* icebreaker */ = {
 			isa = PBXGroup;
 			children = (
+				EA99CE191DB292C000612ADE /* Fonts */,
 				EAA5C89D1DB1D27C00B9A0B0 /* icebreaker.entitlements */,
 				EAA5C89B1DB1CCD200B9A0B0 /* Constants.swift */,
 				EAAEFB7D1DB1DD7200252510 /* Images */,
@@ -141,6 +146,15 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		EA99CE191DB292C000612ADE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EA99CE1B1DB292E100612ADE /* Montserrat-Bold.otf */,
+				EA99CE1A1DB292D400612ADE /* Montserrat-Regular.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		EAA5C89A1DB1CC4900B9A0B0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +175,7 @@
 				EAAEFB821DB1DE6D00252510 /* Vector Smart Object-1.png */,
 				EAAEFB7E1DB1DDBF00252510 /* The best way to start a conversation with a stranger.png */,
 				EAAEFB7F1DB1DDBF00252510 /* Vector Smart Object.png */,
+				EA99CE171DB28F8900612ADE /* Profile Icon.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -236,6 +251,7 @@
 				EAAEFB811DB1DDBF00252510 /* Vector Smart Object.png in Resources */,
 				EA99CE121DB25EED00612ADE /* LaunchScreen.storyboard in Resources */,
 				EAAEFB831DB1DE6D00252510 /* Vector Smart Object-1.png in Resources */,
+				EA99CE181DB28F8900612ADE /* Profile Icon.png in Resources */,
 				EA55742C1DB1BABF004094CE /* LaunchScreen.storyboard in Resources */,
 				EA5574291DB1BABF004094CE /* Assets.xcassets in Resources */,
 				EA99CE111DB25EED00612ADE /* Assets.xcassets in Resources */,

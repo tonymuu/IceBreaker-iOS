@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Alamofire
+import FBSDKLoginKit
 
-class PrimerViewController: UIViewController {
+class PrimerViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -16,14 +18,7 @@ class PrimerViewController: UIViewController {
     let kCellSizeCoef: CGFloat = 0.8
     let kFirstItemTransform: CGFloat = 0.05
     
-    let lessonsArray = ["Create a Hight Quality, High Ranking Search Ad",
-        "Evolve Your Ad Campaigns with Programmatic Buying",
-        "How Remarketing Keeps Customers Coming Back",
-        "Surviving and Thriving on Social Media",
-        "Keep Mobile Users Engaged In and Out of Your App",
-        "Appeal to Searchers and Search Engines with Seo",
-        "Build Your Business Fast with Growth Hacking",
-        "Track Your Acquisitions with Digital Metricks"]
+    var lessonsArray: [NSDictionary]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,27 +26,9 @@ class PrimerViewController: UIViewController {
         stickyLayout.firstItemTransform = kFirstItemTransform
     }
     
-    @IBAction func actionClose(sender: AnyObject) {
+    func actionClose(sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
-}
-
-extension PrimerViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return lessonsArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kDemoCell, for: indexPath) as! PrimerCollectionViewCell
-        let lesson = lessonsArray[indexPath.row]
-        cell.lesson = lesson
-        return cell
-    }
-}
-
-extension PrimerViewController: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.bounds.width, height: collectionView.bounds.height * kCellSizeCoef)
     }
@@ -59,6 +36,36 @@ extension PrimerViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: NSInteger) -> CGFloat {
         return 0
     }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return lessonsArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kDemoCell, for: indexPath) as! PrimerCollectionViewCell
+        let lesson = lessonsArray[indexPath.row]
+        let dict = lesson.object(forKey: "facebook") as! NSDictionary
+        let profilePicString = dict.object(forKey: "picture") as! String
+        let profilePicUrl = URL(string: profilePicString)
+        if let imgData = try? UIImage(data: Data(contentsOf: profilePicUrl!)) {
+            cell.profileImageView.image = imgData
+        }
+
+        if let bioString = dict.object(forKey: "bio") as! String? {
+            let bioLines = bioString.components(separatedBy: Constants.bioDelimiter)
+            cell.line1.text = bioLines[0]
+            cell.line2.text = bioLines[1]
+            cell.line3.text = bioLines[2]
+        }
+        return cell
+    }
 }
 
+//extension PrimerViewController: UICollectionViewDataSource {
+//    
+//}
+//
+//extension PrimerViewController: UICollectionViewDelegateFlowLayout {
+//    
+//}
+//
 

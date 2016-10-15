@@ -7,9 +7,8 @@ struct Constants {
     static let bioDelimiter = "%@"
     
     struct backgroundColor {
-        static let light = UIColor(red: 0.082, green: 0.729, blue: 0.600, alpha: 1.00)
-        static let dark = UIColor(red: 0.043, green: 0.439, blue: 0.361, alpha: 1.00)
-        static let selected = UIColor(red: 0.063, green: 0.588, blue: 0.482, alpha: 1.00)
+        static let light = UIColor(colorLiteralRed: 0.56, green: 0.62, blue: 0.71, alpha: 1.0)
+        static let dark = UIColor(colorLiteralRed: 56, green: 62, blue: 71, alpha: 1.0)
     }
     
     struct size {
@@ -18,10 +17,10 @@ struct Constants {
     
     struct URIs {
         // production url
-//        static let baseUri = "https://icebreaker-dev.herokuapp.com"
+        static let baseUri = "https://icebreaker-dev.herokuapp.com"
         
         // dev url
-        static let baseUri = "http://localhost:3000"
+//        static let baseUri = "http://localhost:3000"
         
     }
     
@@ -30,6 +29,8 @@ struct Constants {
         static let addUser = "/add_user"
         static let getUser = "/get_user"
         static let updateInfo = "/update_info"
+        static let getAllPeers = "/get_all_peers"
+        static let getPeers = "/get_peers"
     }
 }
 

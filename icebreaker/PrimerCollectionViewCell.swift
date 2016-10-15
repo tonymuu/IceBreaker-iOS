@@ -9,11 +9,19 @@
 import UIKit
 
 class PrimerCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var lessonLabel: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var line1: UILabel!
+    @IBOutlet weak var line2: UILabel!
+    @IBOutlet weak var line3: UILabel!
     
-    var lesson: String? {
-        didSet {
-            lessonLabel.text = lesson
-        }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let shadowPath = UIBezierPath(rect: bounds)
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: -10.0, height: 0.0)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowPath = shadowPath.cgPath
     }
 }
