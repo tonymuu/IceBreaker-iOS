@@ -17,6 +17,7 @@
 		EA5574271DB1BABF004094CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5574251DB1BABF004094CE /* Main.storyboard */; };
 		EA5574291DB1BABF004094CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5574281DB1BABF004094CE /* Assets.xcassets */; };
 		EA55742C1DB1BABF004094CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA55742A1DB1BABF004094CE /* LaunchScreen.storyboard */; };
+		EA6C2CC61DB2C7A7006BBC93 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6C2CC51DB2C7A7006BBC93 /* AppIcon.png */; };
 		EA99CE111DB25EED00612ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE081DB25EED00612ADE /* Assets.xcassets */; };
 		EA99CE121DB25EED00612ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE0A1DB25EED00612ADE /* LaunchScreen.storyboard */; };
 		EA99CE131DB25EED00612ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE0C1DB25EED00612ADE /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		EA5574281DB1BABF004094CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA55742B1DB1BABF004094CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA55742D1DB1BABF004094CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6C2CC51DB2C7A7006BBC93 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		EA99CE081DB25EED00612ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA99CE0B1DB25EED00612ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA99CE0D1DB25EED00612ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				EAAEFB7F1DB1DDBF00252510 /* Vector Smart Object.png */,
 				EA99CE171DB28F8900612ADE /* Profile Icon.png */,
 				EA99CE1C1DB2A62400612ADE /* Icebreaker-Logo.png */,
+				EA6C2CC51DB2C7A7006BBC93 /* AppIcon.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				EA5574291DB1BABF004094CE /* Assets.xcassets in Resources */,
 				EA99CE111DB25EED00612ADE /* Assets.xcassets in Resources */,
 				EA99CE131DB25EED00612ADE /* Main.storyboard in Resources */,
+				EA6C2CC61DB2C7A7006BBC93 /* AppIcon.png in Resources */,
 				EA5574271DB1BABF004094CE /* Main.storyboard in Resources */,
 				EA99CE1D1DB2A62400612ADE /* Icebreaker-Logo.png in Resources */,
 				EAAEFB801DB1DDBF00252510 /* The best way to start a conversation with a stranger.png in Resources */,
