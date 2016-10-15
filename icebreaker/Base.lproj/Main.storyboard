@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,46 +64,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tv-1v-ctz">
-                                <frame key="frameInset" minX="166" minY="28" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tv-1v-ctz">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pf-yn-xqh">
-                                <frame key="frameInset" minX="166" minY="57" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pf-yn-xqh">
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSf-iQ-8OJ">
-                                <frame key="frameInset" minX="67" minY="105" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uSf-iQ-8OJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="OGv-9I-U60"/>
+                                    <constraint firstAttribute="height" constant="240" id="Y4h-SX-uWD"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPk-Ap-fJ0">
-                                <frame key="frameInset" minX="169" minY="617" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPk-Ap-fJ0">
                                 <state key="normal" title="Done"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3w-Km-VsT">
-                                <frame key="frameInset" minX="139" minY="330" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex. I like to go mountain-biking." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3w-Km-VsT">
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCF-bD-l6B">
-                                <frame key="frameInset" minX="139" minY="389" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex. Talk to me about your latest music collections." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FUG-Ng-xAy">
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex. I enjoy fishing." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBb-1p-jPo">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u3w-Km-VsT" firstAttribute="top" secondItem="uSf-iQ-8OJ" secondAttribute="bottom" constant="32" id="3iG-nH-anI"/>
+                            <constraint firstItem="9Tv-1v-ctz" firstAttribute="top" secondItem="MTY-fr-tSz" secondAttribute="bottom" constant="8" id="42f-Up-ZlR"/>
+                            <constraint firstItem="9Tv-1v-ctz" firstAttribute="centerX" secondItem="aA9-XE-igo" secondAttribute="centerX" id="4mU-ib-Ffe"/>
+                            <constraint firstItem="FUG-Ng-xAy" firstAttribute="centerX" secondItem="aA9-XE-igo" secondAttribute="centerX" id="63X-GH-8fk"/>
+                            <constraint firstItem="zPk-Ap-fJ0" firstAttribute="centerX" secondItem="aA9-XE-igo" secondAttribute="centerX" id="Cnh-Ol-ZE8"/>
+                            <constraint firstItem="8pf-yn-xqh" firstAttribute="centerX" secondItem="aA9-XE-igo" secondAttribute="centerX" id="JiA-0z-HVR"/>
+                            <constraint firstItem="uSf-iQ-8OJ" firstAttribute="centerX" secondItem="aA9-XE-igo" secondAttribute="centerX" id="QzQ-hp-3IR"/>
+                            <constraint firstItem="FUG-Ng-xAy" firstAttribute="leading" secondItem="aA9-XE-igo" secondAttribute="leadingMargin" constant="24" id="SiO-sb-jqD"/>
+                            <constraint firstItem="FUG-Ng-xAy" firstAttribute="top" secondItem="bBb-1p-jPo" secondAttribute="bottom" constant="16" id="T8D-NI-Spr"/>
+                            <constraint firstItem="bBb-1p-jPo" firstAttribute="top" secondItem="u3w-Km-VsT" secondAttribute="bottom" constant="16" id="eOo-uv-uis"/>
+                            <constraint firstItem="bBb-1p-jPo" firstAttribute="centerX" secondItem="aA9-XE-igo" secondAttribute="centerX" id="h6G-K6-6dn"/>
+                            <constraint firstItem="kOr-Rz-xjB" firstAttribute="top" secondItem="zPk-Ap-fJ0" secondAttribute="bottom" constant="20" id="haY-Gg-bco"/>
+                            <constraint firstItem="uSf-iQ-8OJ" firstAttribute="top" secondItem="8pf-yn-xqh" secondAttribute="bottom" constant="8" id="jsV-wH-BdV"/>
+                            <constraint firstItem="8pf-yn-xqh" firstAttribute="top" secondItem="9Tv-1v-ctz" secondAttribute="bottom" id="kjO-UT-Fj0"/>
+                            <constraint firstItem="u3w-Km-VsT" firstAttribute="leading" secondItem="aA9-XE-igo" secondAttribute="leadingMargin" constant="24" id="tMC-AN-sD2"/>
+                            <constraint firstItem="u3w-Km-VsT" firstAttribute="centerX" secondItem="aA9-XE-igo" secondAttribute="centerX" id="uJw-JY-B31"/>
+                            <constraint firstItem="bBb-1p-jPo" firstAttribute="leading" secondItem="aA9-XE-igo" secondAttribute="leadingMargin" constant="24" id="uMI-UN-wkR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="line1" destination="u3w-Km-VsT" id="eGS-uz-HeB"/>
+                        <outlet property="line2" destination="bBb-1p-jPo" id="XT0-6T-Mhn"/>
+                        <outlet property="line3" destination="FUG-Ng-xAy" id="7ZK-Xe-U3O"/>
+                        <outlet property="profileImage" destination="uSf-iQ-8OJ" id="DGP-GA-ZtR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKt-mz-Nei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -17,7 +17,7 @@ struct Constants {
     
     struct URIs {
         // production url
-//        static let baseUri = "https://koalie.herokuapp.com"
+//        static let baseUri = "https://icebreaker-dev.herokuapp.com"
         
         // dev url
         static let baseUri = "http://localhost:3000"
@@ -27,6 +27,7 @@ struct Constants {
     struct routes {
         static let auth = "/auth/facebook/token"
         static let addUser = "/add_user"
+        static let getUser = "/get_user"
     }
 }
 
