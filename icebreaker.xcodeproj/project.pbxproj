@@ -17,6 +17,12 @@
 		EA5574271DB1BABF004094CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5574251DB1BABF004094CE /* Main.storyboard */; };
 		EA5574291DB1BABF004094CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5574281DB1BABF004094CE /* Assets.xcassets */; };
 		EA55742C1DB1BABF004094CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA55742A1DB1BABF004094CE /* LaunchScreen.storyboard */; };
+		EA99CE111DB25EED00612ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE081DB25EED00612ADE /* Assets.xcassets */; };
+		EA99CE121DB25EED00612ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE0A1DB25EED00612ADE /* LaunchScreen.storyboard */; };
+		EA99CE131DB25EED00612ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA99CE0C1DB25EED00612ADE /* Main.storyboard */; };
+		EA99CE141DB25EED00612ADE /* PrimerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE0E1DB25EED00612ADE /* PrimerCollectionViewCell.swift */; };
+		EA99CE151DB25EED00612ADE /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE0F1DB25EED00612ADE /* PrimerViewController.swift */; };
+		EA99CE161DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99CE101DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift */; };
 		EAA5C8991DB1CC3900B9A0B0 /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5C8981DB1CC3900B9A0B0 /* YourProfileViewController.swift */; };
 		EAA5C89C1DB1CCD200B9A0B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5C89B1DB1CCD200B9A0B0 /* Constants.swift */; };
 		EAAEFB801DB1DDBF00252510 /* The best way to start a conversation with a stranger.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAEFB7E1DB1DDBF00252510 /* The best way to start a conversation with a stranger.png */; };
@@ -40,6 +46,12 @@
 		EA5574281DB1BABF004094CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA55742B1DB1BABF004094CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA55742D1DB1BABF004094CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA99CE081DB25EED00612ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA99CE0B1DB25EED00612ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA99CE0D1DB25EED00612ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		EA99CE0E1DB25EED00612ADE /* PrimerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimerCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA99CE0F1DB25EED00612ADE /* PrimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimerViewController.swift; sourceTree = "<group>"; };
+		EA99CE101DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		EAA5C8981DB1CC3900B9A0B0 /* YourProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
 		EAA5C89B1DB1CCD200B9A0B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EAA5C89D1DB1D27C00B9A0B0 /* icebreaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = icebreaker.entitlements; sourceTree = "<group>"; };
@@ -120,9 +132,23 @@
 			path = icebreaker;
 			sourceTree = "<group>";
 		};
+		EA99CE091DB25EED00612ADE /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				EA99CE0A1DB25EED00612ADE /* LaunchScreen.storyboard */,
+				EA99CE0C1DB25EED00612ADE /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		EAA5C89A1DB1CC4900B9A0B0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EA99CE081DB25EED00612ADE /* Assets.xcassets */,
+				EA99CE091DB25EED00612ADE /* Base.lproj */,
+				EA99CE0E1DB25EED00612ADE /* PrimerCollectionViewCell.swift */,
+				EA99CE0F1DB25EED00612ADE /* PrimerViewController.swift */,
+				EA99CE101DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift */,
 				EA5574231DB1BABF004094CE /* ViewController.swift */,
 				EAA5C8981DB1CC3900B9A0B0 /* YourProfileViewController.swift */,
 			);
@@ -208,9 +234,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAAEFB811DB1DDBF00252510 /* Vector Smart Object.png in Resources */,
+				EA99CE121DB25EED00612ADE /* LaunchScreen.storyboard in Resources */,
 				EAAEFB831DB1DE6D00252510 /* Vector Smart Object-1.png in Resources */,
 				EA55742C1DB1BABF004094CE /* LaunchScreen.storyboard in Resources */,
 				EA5574291DB1BABF004094CE /* Assets.xcassets in Resources */,
+				EA99CE111DB25EED00612ADE /* Assets.xcassets in Resources */,
+				EA99CE131DB25EED00612ADE /* Main.storyboard in Resources */,
 				EA5574271DB1BABF004094CE /* Main.storyboard in Resources */,
 				EAAEFB801DB1DDBF00252510 /* The best way to start a conversation with a stranger.png in Resources */,
 			);
@@ -272,9 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA5C8991DB1CC3900B9A0B0 /* YourProfileViewController.swift in Sources */,
+				EA99CE161DB25EED00612ADE /* StickyCollectionViewFlowLayout.swift in Sources */,
 				EA5574241DB1BABF004094CE /* ViewController.swift in Sources */,
+				EA99CE141DB25EED00612ADE /* PrimerCollectionViewCell.swift in Sources */,
 				EA5574221DB1BABF004094CE /* AppDelegate.swift in Sources */,
 				EAA5C89C1DB1CCD200B9A0B0 /* Constants.swift in Sources */,
+				EA99CE151DB25EED00612ADE /* PrimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +327,22 @@
 				EA55742B1DB1BABF004094CE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA99CE0A1DB25EED00612ADE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA99CE0B1DB25EED00612ADE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA99CE0C1DB25EED00612ADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA99CE0D1DB25EED00612ADE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

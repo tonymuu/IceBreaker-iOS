@@ -18,15 +18,18 @@ class YourProfileViewController: UIViewController {
     
     @IBAction func saveButtonClick(_ sender: AnyObject) {
         let bioLines = [line1.text!, line2.text!, line3.text!] as [String]
-        let bioString = bioLines.joined(separator: Constants.bioDelimiter) as! String
+        let bioString = bioLines.joined(separator: Constants.bioDelimiter) 
         let dict = ["info": bioString]
         Alamofire.request(Constants.URIs.baseUri + Constants.routes.updateInfo, method: .post, parameters: dict, encoding: URLEncoding.default).responseJSON { response in switch response.result {
-            case .success(let data):
+            case .success( _):
                 print("success updated info")
             case .failure(let error):
                 print(error)
             }
         }
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "NearbyVC") as! PrimerViewController
+        self.present(vc, animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
